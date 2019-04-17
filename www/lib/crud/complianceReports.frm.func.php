@@ -25,8 +25,8 @@ function availablePolicies() {
     }
 
     for ($i = 0; $i < $num_rows; $i++) {
-        $id = $resultSelect[0]['id'];
-        $policyName = $resultSelect[0]['policyName'];
+        $id = $resultSelect[$i]['id'];
+        $policyName = $resultSelect[$i]['policyName'];
         echo "<option value=" . $id . ">" . $policyName . "</option>";
     }
 }
